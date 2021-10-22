@@ -152,7 +152,8 @@ p3 <- ggplot(tibble(x = rnorm(10), y = rnorm(10)), aes(x, y)) +
   my_theme
 
 (p1 + p2) / (img + p3) +
-  plot_annotation(tag_levels = 'a', tag_suffix = ".")
+  plot_annotation(tag_levels = 'a', tag_suffix = ".") &
+    theme(plot.tag = element_text(size = 9))
 ```
 
 Lorem nec phasellus justo integer dapibus nibh vel himenaeos eu. Placerat erat curae neque accumsan potenti quam scelerisque dapibus (Figure \@ref(fig:cat2))? Netus natoque at senectus hendrerit donec vestibulum taciti? Praesent aliquet habitasse cum praesent eleifend quisque!
